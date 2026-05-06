@@ -1,0 +1,595 @@
+{
+  "archetypes": {
+    "student": {
+      "name": "Student",
+      "description": "Currently enrolled in an educational institution",
+      "category": "life_stage",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "edu", "canvas", "instructure", "coursera", "edx", "chegg",
+        "quizlet", "blackboard", "gradescope", "piazza", "campuswire",
+        "collegeboard", "fastweb", "scholarships", "ratemyprofessors",
+        "khanacademy", "studocu", "brainly", "bartleby", "cengage",
+        "pearson", "mcgraw", "wiley", "turnitin", "grammarly"
+      ],
+      "tld_signals": [".edu"],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Your cookies indicate ties to educational institutions. Course platforms, grading tools, and .edu session cookies reveal enrollment status, course load, and academic interests. For data brokers, students are a high-value demographic — predictable life transitions, brand loyalty still forming.",
+      "risk_angle": "Student loan companies, textbook marketplaces, and credit card issuers pay premium for confirmed student status."
+    },
+    "job_seeker": {
+      "name": "Job Seeker",
+      "description": "Actively searching for employment opportunities",
+      "category": "life_stage",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "indeed", "glassdoor", "ziprecruiter", "monster", "careerbuilder",
+        "handshake", "lever.co", "greenhouse", "workday", "linkedin.com/jobs",
+        "simplyhired", "dice", "hired", "angel.co", "wellfound",
+        "flexjobs", "usajobs", "idealist", "builtin", "weworkremotely",
+        "remoteok", "salary", "payscale", "levels.fyi", "teamblind"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Activity across multiple job platforms reveals an active employment search. Recruiters, employers, and data brokers can infer your career dissatisfaction, target salary range, industry preferences, and urgency of the search.",
+      "risk_angle": "Recruiters, competing employers, and even your current employer (via data broker purchases) can detect job-seeking behavior."
+    },
+    "apartment_hunter": {
+      "name": "Apartment Hunter",
+      "description": "Actively searching for housing or rental properties",
+      "category": "life_stage",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "zillow", "trulia", "apartments.com", "realtor.com", "padmapper",
+        "hotpads", "rent.com", "streeteasy", "zumper", "apartmentlist",
+        "cozy", "avail", "turbotenant", "rentcafe", "forrent",
+        "apartmentfinder", "movoto", "redfin", "compass.com",
+        "apartmentguide"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Cookies from multiple real estate and rental platforms indicate you're actively searching for housing. Property search patterns reveal your target location, budget range, and timeline — whether you're browsing casually or preparing to move.",
+      "risk_angle": "Moving companies, furniture retailers, utility providers, and insurance companies all purchase relocation-intent data."
+    },
+    "homeowner": {
+      "name": "Homeowner / Renovator",
+      "description": "Engaged in home improvement or maintenance activities",
+      "category": "life_stage",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "homedepot", "lowes", "homeadvisor", "angi", "thumbtack",
+        "build.com", "overstock", "restoration", "sherwin-williams",
+        "menards", "acehardware", "houzz", "architecturaldigest",
+        "dwell", "thisoldhouse", "bobvila", "familyhandyman",
+        "bhg.com", "hgtv"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Home improvement site cookies suggest you own property or are actively renovating. The types of projects researched reveal home value range, neighborhood, and spending patterns on maintenance and upgrades.",
+      "risk_angle": "Contractors, home warranty companies, and property assessors use renovation signals to target homeowners."
+    },
+    "new_parent": {
+      "name": "New / Expecting Parent",
+      "description": "Researching pregnancy, baby care, or early parenting",
+      "category": "life_stage",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "babylist", "whattoexpect", "babycenter", "pampers", "huggies",
+        "buybuybaby", "target.com/baby", "amazon.com/baby",
+        "thebump", "parenthood", "babynames", "fertile", "ovulation",
+        "pregnancy", "nursery", "stroller", "carseat", "diaper",
+        "motherly", "scarymommy", "romper"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Parenting and pregnancy site cookies reveal one of the most commercially sensitive life events. This data was famously exploited when Target predicted a teenager's pregnancy before her family knew — the same signals are visible in your cookies.",
+      "risk_angle": "Baby product companies, insurance adjusters, and life insurance underwriters treat parenthood signals as top-tier data."
+    },
+    "health_researcher": {
+      "name": "Health Researcher",
+      "description": "Actively researching health conditions or medical information",
+      "category": "life_stage",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "webmd", "healthline", "mayoclinic", "nih.gov", "drugs.com",
+        "medlineplus", "patient", "everydayhealth", "medicalnewstoday",
+        "verywellhealth", "health.com", "rxlist", "epocrates",
+        "goodrx", "zocdoc", "vitals", "realself", "psychologytoday",
+        "nami.org", "cdc.gov", "who.int", "clevelandclinic"
+      ],
+      "tld_signals": [".gov"],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Medical and health information site cookies reveal health research activity. While you may be researching for someone else, data brokers treat health-adjacent browsing as an indicator of personal health concerns. This is among the most sensitive data categories.",
+      "risk_angle": "Health insurance companies, pharmaceutical marketers, and data brokers trade health-interest data despite HIPAA protections not covering cookie data."
+    },
+    "traveler": {
+      "name": "Traveler",
+      "description": "Planning or researching travel destinations and bookings",
+      "category": "life_stage",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "expedia", "kayak", "airbnb", "booking.com", "tripadvisor",
+        "hopper", "skyscanner", "priceline", "orbitz", "travelocity",
+        "hotels.com", "vrbo", "hostelworld", "rome2rio", "seat61",
+        "google.com/flights", "southwest", "united", "delta", "jetblue",
+        "amtrak", "cruise", "viator", "getyourguide", "lonelyplanet"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Travel platform cookies reveal destination interests, travel dates, budget preferences, and trip type. Airlines and hotels are known to use cookie-based tracking to adjust prices — returning visitors often see higher rates than first-time searchers.",
+      "risk_angle": "Airlines, hotels, and travel agencies use dynamic pricing algorithms that factor in your search history and perceived urgency."
+    },
+    "power_shopper": {
+      "name": "Active Shopper",
+      "description": "Frequent online shopping activity across multiple retailers",
+      "category": "behavioral",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "amazon", "ebay", "etsy", "target", "walmart", "bestbuy",
+        "costco", "macys", "nordstrom", "zappos", "wayfair", "ikea",
+        "shein", "asos", "zara", "hm.com", "gap", "nike", "adidas",
+        "aliexpress", "wish", "shopify", "checkout", "cart"
+      ],
+      "tld_signals": [],
+      "cookie_categories": ["advertising"],
+      "vendor_signals": [],
+      "narrative": "Cookies across multiple retail platforms combined with advertising trackers build a detailed profile of your shopping behavior. Purchase intent, brand preferences, price sensitivity, and product interests are all visible to the ad networks connecting these sites.",
+      "risk_angle": "Your shopping profile is among the most monetized data types — retail ad networks trade purchase intent signals in real-time auctions."
+    },
+    "finance_optimizer": {
+      "name": "Financial Planner",
+      "description": "Researching financial products, rates, or credit information",
+      "category": "behavioral",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "bankrate", "creditkarma", "nerdwallet", "mint", "sofi",
+        "robinhood", "fidelity", "schwab", "vanguard", "betterment",
+        "wealthfront", "personalcapital", "lendingtree", "creditcards",
+        "annualcreditreport", "experian", "equifax", "transunion",
+        "investopedia", "thebalance", "morningstar", "seekingalpha",
+        "marketwatch", "motleyfool", "wallstreetbets"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Financial product research cookies reveal rate shopping, investment interests, and credit awareness. Lenders and financial services can infer creditworthiness, financial stress, and product readiness from your browsing patterns across these platforms.",
+      "risk_angle": "Financial services companies use browsing data to pre-qualify or exclude potential customers before they even apply."
+    },
+    "content_consumer": {
+      "name": "Content Consumer",
+      "description": "Heavy consumption of streaming, music, or media content",
+      "category": "behavioral",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "netflix", "spotify", "hulu", "disneyplus", "max.com",
+        "peacock", "paramountplus", "appletv", "crunchyroll", "funimation",
+        "audible", "kindle", "goodreads", "podcast", "stitcher",
+        "soundcloud", "bandcamp", "deezer", "tidal", "pandora",
+        "twitch", "youtube"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Entertainment and streaming platform cookies build a comprehensive taste profile — your content preferences, consumption habits, and media diet are visible. These reveal cultural interests, political leanings, and demographic signals that feed recommendation and ad targeting algorithms.",
+      "risk_angle": "Streaming services share viewing data with measurement firms; your entertainment choices inform broader demographic profiling."
+    },
+    "social_butterfly": {
+      "name": "Socially Connected",
+      "description": "Active presence across multiple social media platforms",
+      "category": "behavioral",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "facebook", "instagram", "twitter", "tiktok", "snapchat",
+        "reddit", "pinterest", "tumblr", "discord", "mastodon",
+        "threads", "bluesky", "linkedin"
+      ],
+      "tld_signals": [],
+      "cookie_categories": ["social_media"],
+      "vendor_signals": [],
+      "narrative": "Cookies from multiple social media platforms allow cross-platform identity linking. Each platform sees a slice of your social life — but ad networks that operate across them can reconstruct your full social graph, interests, and engagement patterns.",
+      "risk_angle": "Cross-platform social data enables the most precise demographic targeting in digital advertising."
+    },
+    "gamer": {
+      "name": "Gamer",
+      "description": "Active in gaming platforms and communities",
+      "category": "behavioral",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "steam", "steampowered", "epicgames", "roblox", "xbox",
+        "playstation", "nintendo", "itch.io", "gog.com", "humblebundle",
+        "gamespot", "ign.com", "kotaku", "polygon", "pcgamer",
+        "ea.com", "ubisoft", "blizzard", "battlenet", "riot",
+        "leagueoflegends", "valorant", "minecraft"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Gaming platform cookies reveal play patterns, genre preferences, spending habits on in-game purchases, and community engagement. The gaming industry's data practices are among the least regulated despite collecting extensive behavioral data.",
+      "risk_angle": "Gaming companies track engagement metrics to optimize monetization — time played, purchase frequency, and social connections all feed pricing models."
+    },
+    "dating": {
+      "name": "Dating",
+      "description": "Active on dating or relationship platforms",
+      "category": "behavioral",
+      "min_confidence": 0.90,
+      "domain_keywords": [
+        "tinder", "bumble", "hinge", "match", "okcupid",
+        "coffeemeetsbagel", "plenty", "eharmony", "zoosk",
+        "grindr", "her.app", "feeld", "happn"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Dating platform cookies are among the most personally sensitive data points in your browser. Relationship status, preferences, and location patterns are exposed. This data has been involved in multiple high-profile breaches and has been used for blackmail.",
+      "risk_angle": "Dating app data has been sold to data brokers, used by stalkers, and leaked in breaches exposing millions of users' intimate preferences."
+    },
+    "fitness_enthusiast": {
+      "name": "Fitness / Wellness",
+      "description": "Engaged with fitness tracking and wellness platforms",
+      "category": "behavioral",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "strava", "myfitnesspal", "nike", "fitbit", "peloton",
+        "garmin", "underarmour", "mapmyrun", "runkeeper", "jefit",
+        "bodybuilding.com", "allrecipes", "eatingwell",
+        "whoop", "oura", "noom", "weightwatchers", "calm", "headspace"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Fitness and wellness platform cookies reveal exercise habits, dietary interests, and health consciousness. Combined with location data from activity trackers, these build a detailed picture of your physical routines and body goals.",
+      "risk_angle": "Insurance companies and employers have explored using fitness data for risk assessment and wellness program pricing."
+    },
+    "news_junkie": {
+      "name": "News Consumer",
+      "description": "Regular consumption of news and current events content",
+      "category": "behavioral",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "nytimes", "washingtonpost", "cnn", "bbc", "reuters",
+        "apnews", "wsj", "theguardian", "politico", "thehill",
+        "foxnews", "msnbc", "npr", "axios", "theatlantic",
+        "newyorker", "economist", "vox", "vice", "huffpost",
+        "buzzfeednews", "propublica", "intercept"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "News consumption cookies reveal your information diet, political leanings, and issue interests. The combination of news sources you read creates a remarkably accurate ideological profile — and news sites are among the most heavily tracked on the web.",
+      "risk_angle": "Political campaigns, advocacy groups, and influence operations target voters based on news consumption patterns."
+    },
+    "developer": {
+      "name": "Developer",
+      "description": "Active in software development platforms and communities",
+      "category": "behavioral",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "github", "stackoverflow", "gitlab", "bitbucket", "npm",
+        "dev.to", "hashnode", "jetbrains", "vercel", "netlify",
+        "heroku", "digitalocean", "aws.amazon", "cloud.google",
+        "azure", "docker", "kubernetes", "pypi", "crates.io",
+        "hackernews", "lobste.rs", "codepen", "replit"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "narrative": "Developer platform cookies reveal your technology stack, programming languages, and project interests. Tech recruiters actively mine this data — your GitHub activity, Stack Overflow questions, and cloud platform usage paint a detailed professional skills profile.",
+      "risk_angle": "Tech recruiting is a multi-billion dollar industry built on identifying developers by their online tool usage and community participation."
+    },
+    "heavily_tracked": {
+      "name": "Heavily Tracked",
+      "description": "Unusually high number of advertising trackers present",
+      "category": "privacy_posture",
+      "min_confidence": 0.80,
+      "domain_keywords": [],
+      "tld_signals": [],
+      "cookie_categories": ["advertising"],
+      "vendor_signals": [],
+      "min_ad_cookies": 10,
+      "min_ad_vendors": 5,
+      "narrative": "Your browser carries an unusually high number of advertising trackers. Each one represents a company bidding on your attention in real-time ad auctions. Your browsing profile is being sold hundreds of times per day across competing ad exchanges.",
+      "risk_angle": "At this tracking density, your browsing data is being auctioned in real-time bidding (RTB) systems that process 500+ billion auctions daily."
+    },
+    "silent_collection": {
+      "name": "Collected Without Consent",
+      "description": "Majority of tracking cookies set under tacit consent",
+      "category": "privacy_posture",
+      "min_confidence": 0.80,
+      "domain_keywords": [],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": [],
+      "min_tacit_ratio": 0.6,
+      "narrative": "The majority of your tracking cookies were placed without any meaningful consent interaction. These sites began collecting your data before — or without ever — asking permission. Under GDPR this would be illegal; in most US states, it's standard practice.",
+      "risk_angle": "Tacit data collection means you had no opportunity to opt out — your data was taken as a cost of visiting the site."
+    },
+    "privacy_conscious": {
+      "name": "Privacy Aware",
+      "description": "Minimal third-party tracking footprint",
+      "category": "privacy_posture",
+      "min_confidence": 0.80,
+      "domain_keywords": [],
+      "tld_signals": [],
+      "cookie_categories": ["functional", "session"],
+      "vendor_signals": [],
+      "max_third_party": 5,
+      "narrative": "Your cookie footprint is notably small compared to typical browsing. Either you actively manage your privacy (using blockers, clearing cookies, or private browsing) or your browsing is limited to sites with restrained tracking practices.",
+      "risk_angle": "While your footprint is small, even a few third-party cookies can be used as seeds for identity resolution across the broader data ecosystem."
+    },
+    "ad_network_saturated": {
+      "name": "Ad Exchange Overlap",
+      "description": "Data flowing through multiple competing ad exchanges",
+      "category": "privacy_posture",
+      "min_confidence": 0.80,
+      "domain_keywords": [],
+      "tld_signals": [],
+      "cookie_categories": ["advertising"],
+      "vendor_signals": [
+        "Criteo", "The Trade Desk", "Xandr", "Magnite", "PubMatic",
+        "OpenX", "Index Exchange", "MediaMath", "LiveRamp"
+      ],
+      "min_vendor_matches": 3,
+      "narrative": "Your browsing data flows through multiple competing ad exchanges. Each exchange syncs your identity with the others, meaning your profile isn't just in one system — it's replicated across the programmatic advertising ecosystem.",
+      "risk_angle": "Cookie syncing between ad exchanges means deleting cookies from one network doesn't remove your profile from the others."
+    },
+    "cross_device_tracked": {
+      "name": "Cross-Device Tracked",
+      "description": "Identity resolution services linking activity across devices",
+      "category": "privacy_posture",
+      "min_confidence": 0.85,
+      "domain_keywords": [
+        "liveramp", "tapad", "id5-sync", "intentiq", "rlcdn",
+        "liadm", "eyeota", "exelator", "bluekai", "agkn",
+        "ipredictive", "krxd"
+      ],
+      "tld_signals": [],
+      "cookie_categories": [],
+      "vendor_signals": ["LiveRamp", "Tapad", "ID5", "IntentIQ", "Neustar", "Oracle"],
+      "min_vendor_matches": 2,
+      "narrative": "Identity resolution cookies are present in your browser. These services specialize in linking your activity across devices — your phone, laptop, tablet, and work computer are connected into a single profile. This is the backbone of modern cross-device ad targeting.",
+      "risk_angle": "Cross-device graphs are among the most powerful and opaque tools in the data broker ecosystem — they survive cookie deletion by using probabilistic matching."
+    }
+  },
+
+  "composites": {
+    "graduating_student": {
+      "name": "Graduating & Career Planning",
+      "requires": ["student", "job_seeker"],
+      "narrative": "A student actively exploring career paths — a graduating or career-planning profile. This life transition is one of the most targeted by student loan refinancers, professional clothing brands, relocation services, and early-career financial products.",
+      "risk_angle": "Student-to-professional transition data is worth 3-5x standard demographic targeting to marketers."
+    },
+    "student_relocating": {
+      "name": "Student Planning a Move",
+      "requires": ["student", "apartment_hunter"],
+      "narrative": "Student activity combined with housing searches suggests a post-graduation or transfer relocation. Moving companies, furniture retailers, and utility providers target this exact combination.",
+      "risk_angle": "Relocation during a life transition is among the highest-value signals in the data broker market."
+    },
+    "student_dating": {
+      "name": "College Dating Life",
+      "requires": ["student", "dating"],
+      "narrative": "Student cookies alongside dating platform activity expose a young person's romantic life to data collection. This combination reveals age range, location, educational status, and relationship preferences — deeply personal data from a vulnerable demographic.",
+      "risk_angle": "Young adults' dating data has been exploited in breaches and sold to data brokers who create detailed lifestyle profiles."
+    },
+    "student_social": {
+      "name": "Socially Active Student",
+      "requires": ["student", "social_butterfly"],
+      "narrative": "A student active across multiple social platforms. Cross-referencing educational cookies with social media trackers allows platforms to build a comprehensive profile: academic interests, social circle, campus life, and political leanings.",
+      "risk_angle": "Campus-targeted advertising relies on exactly this data intersection to reach students through their social feeds."
+    },
+    "student_financial": {
+      "name": "Student Financial Planning",
+      "requires": ["student", "finance_optimizer"],
+      "narrative": "Student status combined with financial product research suggests someone managing loans, building credit, or budgeting on a limited income. Student loan refinancers and credit card companies target this intersection aggressively.",
+      "risk_angle": "Students researching financial products are flagged as high-intent leads by lending companies."
+    },
+    "student_developer": {
+      "name": "CS / Tech Student",
+      "requires": ["student", "developer"],
+      "narrative": "A student actively using development platforms — likely in a CS or technical program. Tech recruiters and bootcamps target this profile for internship pipelines and early career recruitment.",
+      "risk_angle": "Tech companies begin talent identification through developer platform activity while students are still enrolled."
+    },
+    "career_relocation": {
+      "name": "Career-Driven Relocation",
+      "requires": ["job_seeker", "apartment_hunter"],
+      "narrative": "Job search activity paired with housing research — one of the clearest signals of a planned life relocation. This combination tells data brokers you're likely changing cities for work, revealing both professional dissatisfaction and geographic flexibility.",
+      "risk_angle": "Relocation intent paired with job search is a top-tier signal for real estate agents, moving companies, and regional employers."
+    },
+    "career_financial": {
+      "name": "Career Change & Financial Planning",
+      "requires": ["job_seeker", "finance_optimizer"],
+      "narrative": "Job search alongside financial product research suggests career change planning — possibly negotiating compensation, bridging an employment gap, or restructuring finances around a new salary. Together these reveal economic vulnerability and decision-making urgency.",
+      "risk_angle": "Insurance companies and lenders adjust risk assessments based on employment transition signals."
+    },
+    "career_developer": {
+      "name": "Tech Career Move",
+      "requires": ["developer", "job_seeker"],
+      "narrative": "A developer exploring new opportunities — stack preferences, seniority level, and company interests are all visible through the combination of development platform cookies and job search activity. Tech recruiting is built on intercepting exactly this signal.",
+      "risk_angle": "A developer job search is worth $10K-30K per successful placement to recruiting agencies."
+    },
+    "upgrading_home": {
+      "name": "Home Upgrade / Move",
+      "requires": ["apartment_hunter", "homeowner"],
+      "narrative": "Home improvement activity alongside property searches suggests you're outgrowing your current space or planning an upgrade. This reveals home equity, renovation investment, and lifestyle stage to the real estate data ecosystem.",
+      "risk_angle": "Real estate agents and mortgage brokers specifically target homeowners who show both renovation fatigue and property search behavior."
+    },
+    "expecting_health": {
+      "name": "Pregnancy / Early Parenthood",
+      "requires": ["new_parent", "health_researcher"],
+      "narrative": "Health research combined with parenting site activity strongly suggests pregnancy or new parenthood. This is the canonical example of invasive data inference — Target famously predicted a teenager's pregnancy from shopping patterns before her family knew.",
+      "risk_angle": "Pregnancy and parenthood data commands premium pricing in the data broker market due to the massive spending shift it predicts."
+    },
+    "parent_shopping": {
+      "name": "New Parent Product Research",
+      "requires": ["new_parent", "power_shopper"],
+      "narrative": "Active shopping combined with parenting research — you're in the product research phase of parenthood. First-time parents spend an estimated $12,000+ in the first year, making this the most commercially valuable life event for retail targeting.",
+      "risk_angle": "Baby product companies invest heavily in capturing first-time parents early, knowing brand loyalty forms during this period."
+    },
+    "parent_financial": {
+      "name": "Family Financial Planning",
+      "requires": ["new_parent", "finance_optimizer"],
+      "narrative": "Financial planning alongside parenting activity — likely budgeting for a growing family. Life insurance, 529 college savings plans, and family-oriented financial products are all targeted at exactly this data intersection.",
+      "risk_angle": "Insurance and investment companies use parenthood signals to time product pitches for maximum conversion."
+    },
+    "health_fitness": {
+      "name": "Active Health Management",
+      "requires": ["health_researcher", "fitness_enthusiast"],
+      "narrative": "Both researching health topics and actively tracking fitness — you're managing your health proactively. While positive behavior, this data combination reveals body goals, possible conditions, and wellness spending patterns to the tracking ecosystem.",
+      "risk_angle": "Health insurance companies are increasingly interested in correlating medical research with fitness data for risk modeling."
+    },
+    "health_financial": {
+      "name": "Health Cost Anxiety",
+      "requires": ["health_researcher", "finance_optimizer"],
+      "narrative": "Medical research combined with financial product browsing can indicate health-cost anxiety — researching both a condition and how to pay for it. This is the intersection privacy advocates warn about most: financial vulnerability combined with health sensitivity.",
+      "risk_angle": "This data combination could theoretically be used by insurers and lenders to infer health-related financial risk."
+    },
+    "deal_hunter": {
+      "name": "Budget-Conscious Shopper",
+      "requires": ["power_shopper", "finance_optimizer"],
+      "narrative": "Shopping activity alongside financial research reveals a budget-conscious consumer — comparing prices, researching credit options, and optimizing spending. Buy-now-pay-later services and discount retailers specifically target this behavioral pattern.",
+      "risk_angle": "BNPL services and credit card companies use price-sensitivity signals to time promotional offers."
+    },
+    "most_surveilled_shopper": {
+      "name": "Most-Surveilled Shopper",
+      "requires": ["power_shopper", "heavily_tracked"],
+      "narrative": "Your shopping behavior is being observed by an unusually high number of trackers. Every product viewed, cart abandoned, and price compared is being auctioned across ad exchanges. Your purchase intent data is among the most commercially valuable information being collected.",
+      "risk_angle": "At this tracking density, your shopping sessions generate hundreds of real-time bid requests per browsing session."
+    },
+    "social_dater": {
+      "name": "Socially Active Dater",
+      "requires": ["social_butterfly", "dating"],
+      "narrative": "Active across both social media and dating platforms — your social graph, relationship status, interests, and romantic preferences are all exposed. Cross-platform tracking can link your dating profile to your public social identity.",
+      "risk_angle": "Data brokers have been caught linking dating app data to social media profiles for identity enrichment."
+    },
+    "digital_native": {
+      "name": "Heavy Digital Footprint",
+      "requires": ["social_butterfly", "content_consumer"],
+      "narrative": "Heavy social media and entertainment consumption creates a comprehensive digital lifestyle profile. Your content preferences, social connections, viewing habits, and engagement patterns paint a detailed picture of your personality, values, and daily routines.",
+      "risk_angle": "Comprehensive digital footprints enable psychographic profiling — ad targeting based on personality traits rather than demographics."
+    },
+    "politically_engaged": {
+      "name": "Politically Engaged",
+      "requires": ["social_butterfly", "news_junkie"],
+      "narrative": "Socially engaged news consumption — your political leanings, issue interests, and social influence are inferable from the combination of news sources and social platforms you use. Political campaigns and advocacy groups build voter profiles from exactly this data.",
+      "risk_angle": "Political micro-targeting uses news consumption + social engagement data to craft personalized political messaging."
+    },
+    "entertainment_lifestyle": {
+      "name": "Entertainment Lifestyle",
+      "requires": ["content_consumer", "gamer"],
+      "narrative": "Entertainment consumption spanning streaming and gaming reveals a comprehensive leisure profile. Screen time patterns, genre preferences, and spending on digital entertainment are all visible across these platforms.",
+      "risk_angle": "Entertainment companies use cross-platform consumption data for franchise targeting and content recommendation."
+    },
+    "budget_traveler": {
+      "name": "Budget Traveler",
+      "requires": ["traveler", "finance_optimizer"],
+      "narrative": "Travel planning alongside financial research — comparing rates, checking credit card rewards, and optimizing travel spending. Airlines and hotels use this combination to gauge price sensitivity and adjust dynamic pricing accordingly.",
+      "risk_angle": "Travel companies implement price discrimination based on perceived budget sensitivity detected through browsing patterns."
+    },
+    "travel_shopper": {
+      "name": "Travel Shopping Phase",
+      "requires": ["traveler", "power_shopper"],
+      "narrative": "Active travel research combined with shopping behavior — you're in the purchasing phase of trip planning. Travel gear, luggage, destination-specific products, and experience bookings are all being targeted based on your browsing combination.",
+      "risk_angle": "Retail targeting for travel accessories activates when travel planning cookies are detected alongside shopping behavior."
+    },
+    "fitness_shopper": {
+      "name": "Fitness Gear Shopper",
+      "requires": ["fitness_enthusiast", "power_shopper"],
+      "narrative": "Fitness tracking combined with active shopping reveals exercise gear purchasing intent. Athletic brands target this intersection to time product launches and seasonal promotions around your training patterns.",
+      "risk_angle": "Sports brands and supplement companies pay premium for fitness-intent combined with shopping-activity signals."
+    },
+    "privacy_developer": {
+      "name": "Privacy-Aware Technologist",
+      "requires": ["privacy_conscious", "developer"],
+      "narrative": "A developer with a minimal tracking footprint — likely using ad blockers, privacy-focused browsers, or intentional cookie management. Your small footprint suggests technical privacy awareness, though even limited cookies can seed identity resolution systems.",
+      "risk_angle": "Ironically, a very small cookie footprint can itself be a fingerprinting signal — 'privacy-aware developer' is a distinguishable browser profile."
+    },
+    "surveillance_no_consent": {
+      "name": "Surveillance Without Consent",
+      "requires": ["heavily_tracked", "silent_collection"],
+      "narrative": "The worst-case privacy scenario: comprehensive tracking with minimal consent. Your browsing is being monitored by many trackers, and most of them never asked permission. This represents systematic data collection that would be illegal under GDPR.",
+      "risk_angle": "This pattern represents the failure mode that privacy regulation was designed to prevent — pervasive tracking without user agency."
+    },
+    "cross_device_saturated": {
+      "name": "Cross-Device Ad Saturation",
+      "requires": ["cross_device_tracked", "ad_network_saturated"],
+      "narrative": "Identity resolution services are linking your activity across devices, and that linked identity flows through multiple ad exchanges. Your unified cross-device profile is being auctioned simultaneously through competing systems — maximum exposure.",
+      "risk_angle": "Cross-device identity graphs combined with multi-exchange data flow means your profile exists in dozens of independent systems."
+    },
+    "graduation_full_transition": {
+      "name": "Full Life Transition",
+      "requires": ["student", "job_seeker", "apartment_hunter"],
+      "narrative": "The complete graduation transition: job hunting, apartment searching, and still tied to educational institutions. From cookies alone, a data broker can reconstruct that you're a student about to graduate, looking for work, and planning to relocate. This is a full life-transition profile assembled from browser data.",
+      "risk_angle": "Life transition bundles (career + housing + education status change) are the highest-value signals in the data broker market."
+    },
+    "college_social_scene": {
+      "name": "College Social Life",
+      "requires": ["student", "dating", "social_butterfly"],
+      "narrative": "A socially active college student on dating apps — age range, campus location, social circle, romantic preferences, and lifestyle are all inferable. This combination creates one of the most detailed profiles possible for a young adult, assembled entirely from cookies.",
+      "risk_angle": "Young adults' combined social, dating, and educational data is frequently harvested for demographic profiling and ad targeting."
+    },
+    "career_relocation_financial": {
+      "name": "Planned Life Restructuring",
+      "requires": ["job_seeker", "apartment_hunter", "finance_optimizer"],
+      "narrative": "Career change, relocation, and financial restructuring — all happening simultaneously. Data brokers see a complete transition playbook: you're changing jobs, moving, and reorganizing your finances. Each data point alone is valuable; together they tell a complete story.",
+      "risk_angle": "Multi-signal life transitions generate the highest per-record prices in the data broker ecosystem — up to $0.50 per record vs. $0.005 for basic demographics."
+    },
+    "target_pregnancy": {
+      "name": "The 'Target Knows' Scenario",
+      "requires": ["new_parent", "health_researcher", "power_shopper"],
+      "narrative": "Health research, parenting content, and active shopping — the exact pattern that famously allowed Target to predict pregnancy. This combination of signals makes your family planning visible to any company tracking your cookies, not just retailers.",
+      "risk_angle": "This is the real-world scenario that brought data privacy into mainstream awareness. The same signals are visible in your cookies right now."
+    },
+    "maximum_exposure": {
+      "name": "Maximum Privacy Exposure",
+      "requires": ["heavily_tracked", "silent_collection", "cross_device_tracked"],
+      "narrative": "Maximum privacy exposure: tracked across devices, through multiple ad networks, mostly without your consent. Your browsing creates a unified cross-device profile that's auctioned in real-time, and you were never meaningfully asked to opt in.",
+      "risk_angle": "This represents the most extreme end of the tracking spectrum — your digital identity is a commodity traded across the data ecosystem."
+    },
+    "shopping_ad_overload": {
+      "name": "Most Monetized Browser",
+      "requires": ["power_shopper", "heavily_tracked", "ad_network_saturated"],
+      "narrative": "Your shopping behavior is observed by the maximum number of trackers flowing through multiple ad exchanges. Your purchase intent data — what you're considering buying, your price sensitivity, your brand preferences — is being auctioned across the programmatic advertising ecosystem.",
+      "risk_angle": "Each product page you visit triggers dozens of real-time bid requests across competing ad exchanges, with your profile as the asset being traded."
+    }
+  },
+
+  "feature_definitions": {
+    "category_features": [
+      "pct_advertising", "pct_analytics", "pct_social_media",
+      "pct_functional", "pct_session", "pct_authentication",
+      "pct_personalization", "pct_unknown"
+    ],
+    "domain_keyword_groups": {
+      "education": ["edu", "canvas", "instructure", "coursera", "edx", "chegg", "quizlet", "blackboard", "gradescope", "piazza"],
+      "jobs": ["indeed", "glassdoor", "ziprecruiter", "monster", "careerbuilder", "handshake", "lever", "greenhouse", "workday", "hired"],
+      "real_estate": ["zillow", "trulia", "apartments", "realtor", "padmapper", "hotpads", "rent.com", "streeteasy", "zumper", "redfin"],
+      "home_improvement": ["homedepot", "lowes", "homeadvisor", "angi", "thumbtack", "houzz", "hgtv", "bobvila"],
+      "parenting": ["babylist", "whattoexpect", "babycenter", "pampers", "huggies", "thebump", "pregnancy", "nursery"],
+      "health": ["webmd", "healthline", "mayoclinic", "nih.gov", "drugs.com", "medlineplus", "goodrx", "zocdoc", "psychologytoday"],
+      "travel": ["expedia", "kayak", "airbnb", "booking", "tripadvisor", "hopper", "skyscanner", "priceline", "hotels.com"],
+      "shopping": ["amazon", "ebay", "etsy", "target", "walmart", "bestbuy", "costco", "macys", "nordstrom", "wayfair", "ikea", "shopify"],
+      "finance": ["bankrate", "creditkarma", "nerdwallet", "mint", "sofi", "robinhood", "fidelity", "schwab", "investopedia", "morningstar"],
+      "entertainment": ["netflix", "spotify", "hulu", "disneyplus", "peacock", "crunchyroll", "audible", "podcast", "twitch"],
+      "social": ["facebook", "instagram", "twitter", "tiktok", "snapchat", "reddit", "pinterest", "discord", "threads", "bluesky"],
+      "gaming": ["steam", "steampowered", "epicgames", "roblox", "xbox", "playstation", "itch.io", "riot", "battlenet", "twitch"],
+      "dating": ["tinder", "bumble", "hinge", "match", "okcupid", "coffeemeetsbagel", "eharmony", "grindr"],
+      "fitness": ["strava", "myfitnesspal", "fitbit", "peloton", "garmin", "nike", "whoop", "noom", "headspace", "calm"],
+      "news": ["nytimes", "washingtonpost", "cnn", "bbc", "reuters", "apnews", "wsj", "theguardian", "politico", "npr", "foxnews"],
+      "developer": ["github", "stackoverflow", "gitlab", "npm", "dev.to", "vercel", "netlify", "heroku", "digitalocean", "hackernews"],
+      "adtech": ["doubleclick", "googlesyndication", "criteo", "adroll", "adsrvr", "adnxs", "pubmatic", "openx", "rubiconproject"],
+      "identity_resolution": ["liveramp", "tapad", "id5-sync", "intentiq", "rlcdn", "liadm", "eyeota", "exelator", "bluekai"]
+    },
+    "aggregate_features": [
+      "total_cookies", "total_domains", "unique_vendors",
+      "ad_cookie_count", "ad_vendor_count",
+      "third_party_count", "edu_domain_count",
+      "tacit_ratio", "implied_ratio", "explicit_ratio"
+    ]
+  }
+}

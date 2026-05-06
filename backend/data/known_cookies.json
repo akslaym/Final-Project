@@ -1,0 +1,282 @@
+[
+  {
+    "name_pattern": "_ga",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Google Analytics \u2014 distinguishes unique users via a randomly generated client identifier",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "_gid",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Google Analytics \u2014 stores a unique value for each page visited within a 24-hour window",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "_gat",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Google Analytics \u2014 throttles request rate to limit data collection on high-traffic sites",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "_gcl_au",
+    "domain_pattern": "*",
+    "category": "advertising",
+    "purpose": "Google AdSense \u2014 experiments with advertisement efficiency across websites",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "IDE",
+    "domain_pattern": ".doubleclick.net",
+    "category": "advertising",
+    "purpose": "Google DoubleClick \u2014 tracks users across sites to build ad profiles and serve targeted ads",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "NID",
+    "domain_pattern": ".google.com",
+    "category": "advertising",
+    "purpose": "Google \u2014 stores preferences and information used for ad personalization",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "1P_JAR",
+    "domain_pattern": ".google.com",
+    "category": "advertising",
+    "purpose": "Google \u2014 gathers site statistics and tracks conversion rates for Google ads",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "ANID",
+    "domain_pattern": ".google.com",
+    "category": "advertising",
+    "purpose": "Google \u2014 advertising displayed on non-Search Google products",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "_fbp",
+    "domain_pattern": "*",
+    "category": "advertising",
+    "purpose": "Facebook Pixel \u2014 tracks visits across websites to build an advertising profile",
+    "vendor": "Meta"
+  },
+  {
+    "name_pattern": "fr",
+    "domain_pattern": ".facebook.com",
+    "category": "advertising",
+    "purpose": "Facebook \u2014 delivers, measures, and improves ad relevancy (90-day expiry)",
+    "vendor": "Meta"
+  },
+  {
+    "name_pattern": "_fbc",
+    "domain_pattern": "*",
+    "category": "advertising",
+    "purpose": "Facebook \u2014 tracks click-throughs from Facebook ads to the advertiser\u2019s site",
+    "vendor": "Meta"
+  },
+  {
+    "name_pattern": "datr",
+    "domain_pattern": ".facebook.com",
+    "category": "functional",
+    "purpose": "Facebook \u2014 browser identification for security and site integrity",
+    "vendor": "Meta"
+  },
+  {
+    "name_pattern": "sb",
+    "domain_pattern": ".facebook.com",
+    "category": "functional",
+    "purpose": "Facebook \u2014 browser identification for security purposes",
+    "vendor": "Meta"
+  },
+  {
+    "name_pattern": "li_sugr",
+    "domain_pattern": ".linkedin.com",
+    "category": "advertising",
+    "purpose": "LinkedIn \u2014 conversion tracking, retargeting, and analytics",
+    "vendor": "LinkedIn"
+  },
+  {
+    "name_pattern": "bcookie",
+    "domain_pattern": ".linkedin.com",
+    "category": "functional",
+    "purpose": "LinkedIn \u2014 browser ID cookie for security and bot detection",
+    "vendor": "LinkedIn"
+  },
+  {
+    "name_pattern": "lidc",
+    "domain_pattern": ".linkedin.com",
+    "category": "functional",
+    "purpose": "LinkedIn \u2014 data center selection for load balancing",
+    "vendor": "LinkedIn"
+  },
+  {
+    "name_pattern": "UserMatchHistory",
+    "domain_pattern": ".linkedin.com",
+    "category": "advertising",
+    "purpose": "LinkedIn \u2014 syncs ad identifiers with third-party ad partners",
+    "vendor": "LinkedIn"
+  },
+  {
+    "name_pattern": "APISID",
+    "domain_pattern": ".google.com",
+    "category": "personalization",
+    "purpose": "Google \u2014 used for embedded YouTube videos and view tracking",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "HSID",
+    "domain_pattern": ".google.com",
+    "category": "authentication",
+    "purpose": "Google \u2014 security cookie to verify user identity and prevent login fraud",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "SID",
+    "domain_pattern": ".google.com",
+    "category": "authentication",
+    "purpose": "Google \u2014 security cookie protecting user data from unauthorized access",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "SIDCC",
+    "domain_pattern": ".google.com",
+    "category": "authentication",
+    "purpose": "Google \u2014 security cookie protecting user data (3-month expiry)",
+    "vendor": "Google"
+  },
+  {
+    "name_pattern": "_tt_",
+    "domain_pattern": "*",
+    "category": "advertising",
+    "purpose": "TikTok \u2014 tracks user interactions for ad targeting and campaign measurement",
+    "vendor": "TikTok"
+  },
+  {
+    "name_pattern": "_pin_unauth",
+    "domain_pattern": "*",
+    "category": "advertising",
+    "purpose": "Pinterest \u2014 identifies unauthenticated users for ad targeting",
+    "vendor": "Pinterest"
+  },
+  {
+    "name_pattern": "__stripe",
+    "domain_pattern": "*",
+    "category": "functional",
+    "purpose": "Stripe \u2014 fraud prevention and payment processing security",
+    "vendor": "Stripe"
+  },
+  {
+    "name_pattern": "AMCV_",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Adobe Experience Cloud \u2014 unique visitor identification across Adobe solutions",
+    "vendor": "Adobe"
+  },
+  {
+    "name_pattern": "s_cc",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Adobe Analytics \u2014 checks whether cookies are enabled in the browser",
+    "vendor": "Adobe"
+  },
+  {
+    "name_pattern": "optimizelyEndUserId",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Optimizely \u2014 unique user ID for A/B testing and personalization",
+    "vendor": "Optimizely"
+  },
+  {
+    "name_pattern": "_hjid",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Hotjar \u2014 unique user ID for session replay and heatmap tracking",
+    "vendor": "Hotjar"
+  },
+  {
+    "name_pattern": "_hjSessionUser",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Hotjar \u2014 persists user ID on first page landing",
+    "vendor": "Hotjar"
+  },
+  {
+    "name_pattern": "mp_",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "Mixpanel \u2014 tracks user interactions and behavior analytics",
+    "vendor": "Mixpanel"
+  },
+  {
+    "name_pattern": "hubspotutk",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "HubSpot \u2014 tracks visitor identity, passed on form submission for deduplication",
+    "vendor": "HubSpot"
+  },
+  {
+    "name_pattern": "__hstc",
+    "domain_pattern": "*",
+    "category": "analytics",
+    "purpose": "HubSpot \u2014 tracks visitors with session number and visit timestamps",
+    "vendor": "HubSpot"
+  },
+  {
+    "name_pattern": "__cf_bm",
+    "domain_pattern": "*",
+    "category": "functional",
+    "purpose": "Cloudflare \u2014 bot management cookie distinguishing humans from bots",
+    "vendor": "Cloudflare"
+  },
+  {
+    "name_pattern": "cf_clearance",
+    "domain_pattern": "*",
+    "category": "functional",
+    "purpose": "Cloudflare \u2014 indicates visitor passed a security challenge",
+    "vendor": "Cloudflare"
+  },
+  {
+    "name_pattern": "shib_",
+    "domain_pattern": "*",
+    "category": "authentication",
+    "purpose": "Shibboleth \u2014 single sign-on session for institutional authentication",
+    "vendor": "Shibboleth"
+  },
+  {
+    "name_pattern": "JSESSIONID",
+    "domain_pattern": "*",
+    "category": "session",
+    "purpose": "Java \u2014 server-side session identifier for Java web applications",
+    "vendor": null
+  },
+  {
+    "name_pattern": "PHPSESSID",
+    "domain_pattern": "*",
+    "category": "session",
+    "purpose": "PHP \u2014 server-side session identifier for PHP web applications",
+    "vendor": null
+  },
+  {
+    "name_pattern": "ASP.NET_SessionId",
+    "domain_pattern": "*",
+    "category": "session",
+    "purpose": "ASP.NET \u2014 server-side session identifier for .NET web applications",
+    "vendor": null
+  },
+  {
+    "name_pattern": "csrftoken",
+    "domain_pattern": "*",
+    "category": "functional",
+    "purpose": "Cross-Site Request Forgery protection token",
+    "vendor": null
+  },
+  {
+    "name_pattern": "zguid",
+    "domain_pattern": ".zillow.com",
+    "category": "analytics",
+    "purpose": "Zillow \u2014 unique user identifier for tracking property searches and views",
+    "vendor": "Zillow"
+  }
+]

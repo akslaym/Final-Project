@@ -1,0 +1,100 @@
+[
+  {
+    "name": "IDE",
+    "value": "AHWqTUmzZRaOsRBkh",
+    "domain": ".doubleclick.net",
+    "path": "/",
+    "expirationDate": 1761868800,
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "none"
+  },
+  {
+    "name": "zguid",
+    "value": "24|%243a3d1",
+    "domain": ".zillow.com",
+    "path": "/",
+    "expirationDate": 1793404800,
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "none"
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.17179",
+    "domain": ".zillow.com",
+    "path": "/",
+    "expirationDate": 1769644800,
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax"
+  },
+  {
+    "name": "NID",
+    "value": "511=abc",
+    "domain": ".google.com",
+    "path": "/",
+    "expirationDate": 1777622400,
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "none"
+  },
+  {
+    "name": "shib_session",
+    "value": "_a1b2c3d4",
+    "domain": "brown.edu",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "none"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.2.12345",
+    "domain": ".brown.edu",
+    "path": "/",
+    "expirationDate": 1793404800,
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax"
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.67890",
+    "domain": ".brown.edu",
+    "path": "/",
+    "expirationDate": 1761955200,
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax"
+  },
+  {
+    "name": "fr",
+    "value": "0abc123",
+    "domain": ".facebook.com",
+    "path": "/",
+    "expirationDate": 1769644800,
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "none"
+  },
+  {
+    "name": "_hjid",
+    "value": "12345-abcd",
+    "domain": ".example.com",
+    "path": "/",
+    "expirationDate": 1793404800,
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "none"
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "ABC123DEF456",
+    "domain": "app.example.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "strict"
+  }
+]
